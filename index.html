@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dark & Light Mode</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <h1>Coding...</h1>
+            <ul>
+                <li>HOME</li>
+                <li>about</li>
+                <li>portfolio</li>
+                <li>service</li>
+                <li>hire me</li>
+            </ul>
+            <i class="ri-moon-clear-fill" id="icon"></i>
+        </nav>
+
+
+        <div class="hero">
+            <div class="left">
+                <h1>Vortex <span>Frame</span></h1>
+                <p>Follow for More Guys Don't Forget to Subscribe My Youtube Channel. Stay update with Vortex
+                    <span>Frame</span> Youtube channel</p>
+                <button>Download CV</button>
+                <div class="icon">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
+                    <i class="ri-edge-new-fill"></i>
+                </div>
+            </div>
+            <div class="right">
+                <div class="box">
+                    <img src="./male.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let icon = document.querySelector("#icon")
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.classList.remove("ri-moon-clear-fill")
+                icon.classList.add("ri-sun-foggy-fill")
+            }
+            else{
+                icon.classList.add("ri-moon-clear-fill")
+                icon.classList.remove("ri-sun-foggy-fill")
+            }
+        }
+    </script>
+</body>
+
+</html>
